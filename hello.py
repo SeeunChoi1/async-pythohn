@@ -1,9 +1,8 @@
-def main():
-    """method 생성"""
-    print("hello")
+from flask import Flask
 
+app = Flask(__name__)
 
-print("hello world")
+print(app)
 
 """
 초기 환경설정
