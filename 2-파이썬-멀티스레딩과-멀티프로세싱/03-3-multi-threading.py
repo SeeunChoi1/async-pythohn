@@ -20,7 +20,7 @@ def main():
     # 웹에서 데이터를 받아오는 코드
     urls = ["https://google.com", "https://apple.com"] * 50
 
-    executor = ThreadPoolExecutor(max_workers=10)
+    executor = ThreadPoolExecutor(max_workers=10)  # 스레드 갯수
 
     with requests.Session() as session:
         # result = [fetcher(session, url) for url in urls]
